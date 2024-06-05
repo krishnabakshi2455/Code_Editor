@@ -1,0 +1,29 @@
+.editor-contianer {
+    display: flex;
+    flex-direction: row;
+    background-color: #060606;
+    height: 50vh;
+}
+
+.editor-heading {
+    background-color: #1d1e22;
+    display: flex;
+    padding: 9px 12px;
+}
+
+.editor-header {
+    display: flex;
+    background-color: #060606;
+    color: #AAAEBC;
+    justify-content: space-between;
+    font-weight: 700px;
+}
+
+@media (min-width:300px) and (max-width:450px) {
+    .editor-contianer {
+        display: flex;
+        flex-direction: column;
+        background-color: #060606;
+            height: auto;
+    }
+}

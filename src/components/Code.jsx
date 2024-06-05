@@ -1,18 +1,15 @@
 import React, { useContext } from 'react'
 import Editor from './Editor'
+import './AllCss.css'
 import { Box, styled } from '@mui/material'
 import { DataContext } from '../ContextF/ContextData'
-const ContainerCode = styled(Box)`
-display:flex;
-background-color:#060606;
-height:50vh;
-`
+
 
 function Code() {
     const { html, sethtml, css, setcss, js, setjs } = useContext(DataContext)
     return (
         <>
-            <ContainerCode>
+            <Box className='editor-contianer'>
 
                 <Editor
                     heading="HTML"
@@ -36,7 +33,7 @@ function Code() {
                     onchange={setjs}
                 />
 
-            </ContainerCode>
+            </Box>
         </>
     )
 }

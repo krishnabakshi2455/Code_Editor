@@ -18,7 +18,7 @@ import { DataContext } from '../ContextF/ContextData'
                     <iframe 
                         srcDoc={srcCode}
                         title='Output'
-                        sandbox='allow-scripts '
+                        sandbox='allow-scripts'
                         width="100%"
                         height="100%"
 
